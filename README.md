@@ -35,5 +35,5 @@ https://github.com/rts-cmk-opgaver/den-lille-lommeregner
 Opdateres forhåbentligt løbende
 
 
-### Have fun :metal
+### Have fun 🤘
 *- Sarah-Elizabeth*
