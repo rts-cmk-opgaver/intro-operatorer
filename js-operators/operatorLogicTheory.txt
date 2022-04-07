@@ -1,0 +1,76 @@
+Operator - Logicals
+------------------------
+
+Så indtil videre har det været ret logisk, ik'?
+Kaffen er consumed() og det er tid til puns og til min favorit: logik. 
+
+Nogle gange er én sammenligning ikke nok. Andre gange er der en undtagelse for reglen. 
+
+Logiske operatorer svarer til at man skriver 'eller', 'og' og 'ikke' sammen med sine betingelser.
+Det er smart for at undgår have for mange nested if/else statements som vil gøre både os og computeren trætte. 
+
+Nested er når du har et element inde i et element f.eks:
+
+if(condition 1){
+    if(condition 2){
+        return true;
+    }
+    else if(condition 3){
+        return false;
+    }
+    return true;
+}
+else{
+    return false;
+}
+
+Her er der 1 nested if/else der eksekveres hvis condition 1 er true.
+
+Der er dog en smartere og mere overskuelig måde at sige hvis condition 1 OG (&&) condition 2 er sande skal der return true:
+
+if(condition 1 && condition 2){
+    return true
+}
+else{
+    return false
+}
+
+Liste over logiske operatorer
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+||      OR / eller          (10 > 9) || (10 < 9) = true or false  = true
+&&      AND / og            (10 > 9) && (10 < 9) = true and false = false
+!       NOT / ikke          !(10 > 9)            = not true       = false
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+for de logiske operatorer gælder følgende "regneregler" for de boolean datatyper (true/false) (1/0):
+
+true or true is true        1 || 1 = 1
+true or false is true       1 || 0 = 1
+false or false is false     0 || 0 = 0
+
+true and true is true       1 && 1 = 1
+true and false is false     1 && 0 = 0
+false and false is false    0 && 0 = 0
+
+not true is false           !1 = 0
+not false is true           !0 = 1
+
+
+/*********************************************************************************************************/
+/                 HVAD SKAL JEG BRUGER DET TIL I DEN VIRKELIGE VERDEN???                                  /
+/*********************************************************************************************************/
+
+Alle kredsløb fra hjemmet til computeren er bygget op over om hvorvidt et signal er tændt eller slukket. 
+Om det er 5 V eller 230 V så er princippet det samme om end diagrammerne lidt forskellige. 
+Tændt og slukket er 1 og 0, true og false. Da det er basen for alt er det også sådan vi kommunikere at computeren
+skal fortsætte eller afbryde en handling.
+
+Nogle gange er der flere "knapper" til lyset og selvom den ene er slukket er den anden tændt og lyset skal være tændt.
+Dette er en "OR" / "||" operator. 
+
+Det samme gælder for vores kode. Nogle gange må et tekst input indeholde både badeænder eller flamimgoer. 
+Nogle gange skal en betingelse fuldstændig udelukkes med "NOT" / "!" eller begge bestingelser SKAL være opfyldt med "AND" / "&&"
+inden vi kan komme videre.
+
+
+

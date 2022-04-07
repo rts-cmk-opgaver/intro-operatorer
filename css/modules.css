@@ -1,0 +1,89 @@
+/* MODULES */
+
+/* extra styles */
+/*______________*/
+
+.inverted{
+    background-color: var(--theBgContrastColor);
+    color: var(--themeTextContrastColor);
+    
+}
+
+/* Container modules */
+/*___________________*/
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.flex--start{
+    justify-content:flex-start;
+}
+.flex--endstacked{
+    align-content:flex-end;
+    justify-content:end;
+    flex-direction: column;
+
+    
+}
+
+/* Text modules */
+/*______________*/
+
+.textcenter{
+    text-align: center;
+}
+.textblock{
+    display: block;
+    word-wrap: break-word;
+    border-left: 2px solid var(--themeBrandColor);
+    
+}
+.quote{
+    font-size: xx-large;
+    font-style: italic;
+    font-family:var(--theTextFontContrast);
+}
+
+/* Responsive quote der placere sig mere verticalt centralt ved større skærme */
+/*____________________________________________________________________________*/
+
+@media only screen and (min-width: 600px) {
+    .quote{
+        margin-top: 10%;
+    }
+}
+
+
+/* form modules */
+/*______________*/
+
+.form__label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.form__input{
+    display: block;
+    border: 1px solid var(--themeTextColor);
+    background-color: var(--themeBgColor);
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.form__btn{
+    display: block;
+    border: none;
+    background-color: var(--themeBrandColor);
+    padding: 10px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+    color: var(--themeBgColor);
+}
+
+.form__btn:hover{
+    background-color: var(--themeTextColor);
+}

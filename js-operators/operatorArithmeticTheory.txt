@@ -1,0 +1,66 @@
+Operators - arithmetic:
+------------------------
+
+En operator udfører en handling mellem to værdier. Vi kender de gængse fra matematik (nu ikke noget med at sukke!).
+Det er de symboler der dikterer hvordan vi manipulere vores input. det er plus, minus, modulo, lig med, større end osv.
+Når matematikerne løber tør for operatorer begynder de at bruge funktioner. Dem kommer vi også til... senere.
+
+Min personlige favorit er når de konstante tal får for mange decimaler og de giver op og bruger græske bogstaver. 
+Vidste du at pi ville svare til en 'const' variabel i JS?
+
+Hvor metematiske operatorer hjælper os til at regne kan de også hjælp os med at klippe klister i vores kode.
+Operatorerne opfører sig forskelligt alt efter hvilken type værdi de skal manipulere. 
+Hvor integers vil matematificeres vil strings f.eks. klistres sammen. 
+
+Hvad vil der ske hvis vi prøver at bruge en matematisk operator på en string OG en integer?
+- Prøv at teste det selv i sandbox'en, hvad blev resultatet?
+
+Matematiske operatorer kaldes også for 'arithmetic operators'.
+
+Kort opsummeret kan aritmatiske operators bruges på integers (inkl. numbers og bigInt) samt på boolean (true/false)
+som konvereteres til 1 (true) og 0 (false). I det tilfælde regnes der med et binært talsystem. 
+
+(Spørg jeres matematiklærer om forskellige talsystemer og konverteringen imellem dem for en mere uddybende forklaring)
+
+'+' kan desuden bruges til at klistre strings sammen, men husk mellemrummet. 
+
+Liste over aritmetiske operatorer:
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
++   plus/addition           addere værdierne og klistre strings sammen      10 + 2 = 12         'time to bug ' + 'the flamingo' = 'time to bug the flamingo' 
+-   minus/subtrahering      Subtrahere højre værdi fra venstre værdi        10 - 2 = 8
+/   Division                dividere venstre værdi fra højre værdi          10 / 2 = 5
+*   gange/multiplikation    multiplicere de to værdier                      10 * 2 = 20
+%   Modulus                 viser værdien til overs ved Division            10 % 2 = 0           10 % 3 = 1
+++  incrementering          incrementere værdien med 1                      værdi = værdi + 1
+--  decrementering          decrementere værdien med 1                      værdi = værdi - 1
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(de sidste to er især gode til når man laver en kode der tælle f.eks. en loop counter)
+
+Tid til at se hvad vi skal bruge det til i det virkelige liv.. lad os kigge på operatorArithmetic.js filen. 
+
+/*********************************************************************************************************/
+/                 HVAD SKAL JEG BRUGER DET TIL I DEN VIRKELIGE VERDEN???                                  /
+/*********************************************************************************************************/
+
+++ og --
+er tællere der bruges til at navigere om det er fordi de ændre positionen på et item i et grid ud fra aktuelle position
+Dvs ændre grid-column og grid-row til 1 større eller mindre.
+(se Sarah-Elizabeths eller CMK-opgaver github for "Move the Dot" repository for netop dette eksempel)
+
+Bruges altid i løkker til at angive nummeret på loopet og at denne skal fortsætte med at loope til betingelsen er opfyldt.
+Dette bruges OVERALT i programmering, fra validering til data sortering til at finde ud af hvor mange gange et ord gentages
+i en tekst fil. Hvilket er overraskende nyttigt ind imellem. 
+
++, -, * og /
+er dem vi kender. Vi slipper ikke for at vores funktioner kræver noget matematik. Om det er databehandling, analyser, eller 
+om vi tilføjer stats, buffs eller damage til vores lille prik/dot vi flytter rundt på vores grid. 
+
+%
+er sjov. Den kræver lige et par krøller på overvejelserne og tungen lige i munden men når den klikker er den genial. 
+Modulus kan lade dig vælge hveranden i stedet for hvert data punkt i et array eller items i et grid. 
+Den kan lade dig vide om et tal er lige (return = 0) eller ulige (return = 1) eller for den sags skyld kan du
+bruge hvilken som helst tabel. Bru evt. modulus til kun at target hver 10. element i et array. 
+

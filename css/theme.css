@@ -1,0 +1,16 @@
+/* VARIABLES for theme */
+/*_____________________*/
+
+:root{
+
+    --themeTextFont: Arial, Helvetica, sans-serif;
+    --theTextFontContrast: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    --themeTextColor: rgb(83, 83, 83);
+    --themeTextContrastColor: whitesmoke;
+
+    --themeBrandColor: rgb(206, 175, 76);
+
+    --themeBgColor: whitesmoke;
+    --theBgContrastColor: rgb(83, 83, 83);
+}

@@ -1,0 +1,68 @@
+/* LAYOUT */
+
+/* statisk 2x2 grid */
+/*__________________*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* grid items der statisk er sat til en span 2 */
+/* grid items left opførere sig som top i mobile first og right som bottom */
+/*_________________________________________________________________________*/
+
+.grid__left{
+    grid-column: 1/span 2;
+    grid-row: 1;
+}
+.grid__right{
+    grid-column: 1/span 2;
+    grid-row: 2;
+}
+.grid__top{
+    grid-column: 1/span 2;
+    grid-row: 1;
+}
+.grid__bottom{
+    grid-column: 1/span 2;
+    grid-row: 2;
+}
+
+/* Responsive grid items for større skærme */
+/*_________________________________________*/
+
+@media only screen and (min-width: 600px) {
+    .grid__left{
+        grid-column: 1;
+        grid-row: 1/span 2;
+    }
+    .grid__right{
+        grid-column: 2;
+        grid-row: 1/span 2;
+    }
+}
+
+/* layout specifik bredde og centrering mm. */
+/*__________________________________________*/
+
+.l__fullwidth{
+    width: 100%;
+}
+.l__shortwidth{
+    width: 100%;
+}
+.l__padding{
+    padding: 2%;
+}
+
+/* Responsive shortwidth til større skærme */
+/*_________________________________________*/
+
+@media only screen and (min-width: 600px) {
+    .l__shortwidth{
+        width: 60%;
+        margin: 0px auto;
+    }
+}

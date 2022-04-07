@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="includes.js"></script>
+
+    <title>Primitive datatypes & operators</title>
+</head>
+<body>
+    <header class="l__fullwidth textcenter l__padding inverted">
+        <h2 class="quote">Operatorer i JavaScript</h2>
+    </header>
+    <main>
+
+        <!-- Vores sektion omkring aritmetiske operatorer-->
+        <section class="grid l__shortwidth l__padding">
+
+            <!-- Vores beskrivende tekst og output-->
+            <div class="grid__left l__fullwidth">
+                <h1>Operator - Arithmetic</h1>
+                <p class="textblock l__padding">
+                    Tid til at lege med arithmetic operators. 
+                    Ændre på funktionen mathItUp() i operatorArithmetic.js for at prøve andre typer beregninger.
+                    Output ses når der trykkes på knappen. 
+                </p>
+                <h2 class="l__padding" id="opArithOut">Resultatet vises her</h2>
+            </div>
+
+            <!-- Vores formular til beregningerne -->
+            <div class="grid__right l__fullwidth flex flex--endstacked">
+                <label class="form__label"  for="opArithInA">Input A: </label>
+                <input type="text" id="opArithInA" name="opArithInA" class="form__input" placeholder="indsæt integer..">
+
+                <label class="form__label"  for="opArithInB">Input B: </label>
+                <input type="text" id="opArithInB" name="opArithInB" class="form__input" placeholder="indsæt integer..">
+
+                <!-- Knappen kalder mathItUp() funktionen når der klikkes -->
+                <button class="form__btn" onclick="mathItUp()">Beregn</button>
+            </div>
+
+        </section>
+
+        <!-- Vores Sektion om sammenlingings operatorer -->
+        <section class="grid l__shortwidth l__padding">
+
+            <!--- Vores overskrift og vores opgave beskrivelse-->
+            
+            <div class="grid__left l__fullwidth">
+                <h1>Operator - Comparison</h1>
+                <p class="textblock l__padding">
+                    I theTruth() funktionen i operatorCompare.js kan du ændre på sammenlignerne i if/else statements.
+                    Lad os finde ud af sandheden bag sammenlignerne.
+                </p>
+                <h2 class="l__padding" id="opCompOut"">Om betingelsen er sand eller falsk vises her</h2>
+                
+            </div>
+
+            <!--- Vores input formular -->
+            <div class="grid__right l__fullwidth flex flex--endstacked">
+                
+                <label class="form__label"  for="opCompInA">Input A: </label>
+                <input type="text" class="form__input" id="opCompInA" name="opCompInA" placeholder="Indsæt integer..">
+
+                <label class="form__label"  for="opCompInB">Input B: </label>
+                <input type="text" class="form__input" id="opCompInB" name="opCompInB" placeholder="Indsæt integer..">
+
+                <button class="form__btn" onClick="theTruth()">
+                    True or false?
+                </button>
+            </div>
+            
+        </section>
+
+        <!-- Vores sektion om logiske operatorer -->
+        <section class="grid l__shortwidth l__padding">
+
+            <!-- Vores højre del og vores beskrivelse -->
+            <div class="grid__left l__fullwidth">
+                <h1>Operator - Logics</h1>
+
+                <p class="textblock l__padding">
+                    Tid til at holde tungen lige i munden, 
+                    hvor mange sammenligningerne og logiske operatorere kan vi sætte ind i én if statement?
+                    Find ud af det ved at rette og tilføje til thinkLogic() funktionen i operatorLogic.js filen. 
+                </p>
+
+                <!-- output fra vores funktion-->
+                <h2 class="l__padding" id="opLogicOut">Array med resultater for de enkelte led </h2>
+                <h2 class="l__padding" id="opBoolOut"> Resultatet for den samlede validering </h2>
+            </div>
+
+             <!-- Vores venstre del og vore formular -->
+             <div class="grid__right l__fullwidth l__padding flex flex--endstacked">
+                
+                <label class="form__label"  for="opLogicInA">Input A: </label>
+                <input type="text" class="form__input" id="opLogicInA" name="opLogicInA" placeholder="Indsæt integer..">
+
+                <label class="form__label"  for="opLogicInB">Input B: </label>
+                <input type="text" class="form__input" id="opLogicInB" name="opLogicInB" placeholder="Indsæt integer..">
+
+                <label class="form__label"  for="opLogicInC">Input C: </label>
+                <input type="text" class="form__input" id="opLogicInC" name="opLogicInC" placeholder="Indsæt integer..">
+
+                <button class="form__btn" onClick="thinkLogic()">
+                    Validér
+                </button>
+            </div>
+        </section>
+
+        <!-- Vores sektion omkring assignments operators -->
+        <section class="grid l__shortwidth l__padding">
+
+            <!-- Vores beskrivelse -->
+            <div class="grid__left l__fullwidth">
+                <h1>Operator - Assignments</h1>
+
+                <p class="textblock l__padding">
+                    Matematikken forkortes og vi kan tildele vores variabler en ny værdi hvor den adderes/subtraheres/multipliceres/divideres med sig selv.
+                    I operatorAssign.js kan vi nu tildele OG manipulere værdier med en enkelt operator i assignMath() funktionen.
+
+                    Brug komma (,) som seperator i array input. 
+                    En konstant er den faste værdi vi bruger itl at manipulere arrayet.
+                </p>
+
+                <!-- Vores output -->
+                <h2 class="l__padding" id="opAssignOut">her vises det beregnede array </h2>
+            </div>
+
+             <!-- Vores input -->
+            <div class="grid__right l__fullwidth flex flex--endstacked">
+                <label class="form__label"  for="opAssignInA">Input array : </label>
+                <input type="text" class="form__input" id="opAssignInA" name="opAssignInA" placeholder="f.eks. 1,2,3,4 ..">
+
+                <label class="form__label"  for="opAssignInB">Input konstant:</label>
+                <input type="text" class="form__input" id="opAssignInB" name="opAssignInB" placeholder="Indsæt integer..">
+                
+                <!-- Kalder vore funktion assignMath() på onclick -->
+                <button class="form__btn" onclick="assignMath()">
+                    Beregn array
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Section med lommeregner opgaven -->
+        <section class="grid l__fullwidth inverted">
+
+            <!-- HTML for vores lommeregner knap stil-->
+            <!-- Vores oversrkift og beskrivelse -->
+            <div class="grid__top l__shortwidth textcenter">
+
+                <h1 class="quote l__padding"> Den lille lommeregner og javaScript </h1>
+            
+            </div>
+
+            <!-- Vores input og vores operatorer -->
+            <div class="l__shortwidth grid__bottom grid l__padding">
+
+                <!-- Vores beskrivelse -->
+                <div class="grid__left l__fullwidth">
+                    <p class="textblock l__padding">
+                        I den her opgave skal du bruge hvad du har lært til at lave en funktion i filen simplecalc.js 
+                        Funktionen skal hedde 'calc' og have et argument 'op' der bruges til at validere hviken operator er brugt ud fra 'value' 
+                        af knapperne (operatoren).
+                        Derudover skal funktionen indeholde en validering af input om det er integer.
+                    </p>
+
+                    <!-- Viser reultatet -->
+                    <h2 class="l__padding" id="simpleCalcOut">Resultatet vises her </h2>
+                </div>
+
+                <!-- Input og operatorer -->
+                <div class="grid__right l__fullwidth flex flex--endstacked">
+                    <label class="form__label"  for="simpleCalcInA">Input A: </label>
+                    <input type="text" class="form__input" id="simpleCalcInA" name="simpleCalcInA" placeholder="Indsæt integer..">
+
+                    <label class="form__label"  for="simpleCalcB">Input B:</label>
+                    <input type="text" class="form__input" id="simpleCalcInB" name="simpleCalcInB" placeholder="Indsæt integer..">
+                    
+                    <!-- Kalder vore funktion calc('op') på onclick -->
+                    <div class="flex flex--start">
+                        <button class="form__btn" onclick="calc('+')"> + </button>
+                        <button class="form__btn" onclick="calc('-')"> - </button>
+                        <button class="form__btn" onclick="calc('*')"> * </button>
+                        <button class="form__btn" onclick="calc('/')"> / </button>
+                    </div>
+                    
+                 </div>
+                
+
+            </div>
+
+
+        </section>
+    </main>
+</body>
+</html>

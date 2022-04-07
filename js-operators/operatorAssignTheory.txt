@@ -1,0 +1,33 @@
+Operator - Assignments
+------------------------
+
+for alt hvad vi ved om variabler og data er det lige fedt hvis vi ikke kan kombinere dem. 
+
+Assignments er de operatorer der tildeler en værdi til variable, array, object osv. det er vores "lig med". 
+
+Det er i sig selv tilpas lige til uden behov for større forklaring. Det der dog er lidt interessant er at der findes
+mere end én type assign. De resterende assigns kombinere matematiske operatorer med vore gode gamle "=". 
+
+Husker i den smarte tæller fra de matematiske operatorer som tæller 1 op eller ned (++ / --)?
+
+Det er samme princeip her hvor at to inputs bliver beregnet og værdien tildelt variablen til venstre. 
+
+Dette spare en del kode og tastearbejde for os rent lavpraktisk og giver mere overblik.
+
+Liste over assignment operators
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+=       Tildeler værdien til venstre til variablen til højre                var n = 2                   n           write(n) : 2
++=      Tildeler summen at de to værdier til den venstre variable           var n = 3, var m = 2        n += m      write(n) : 5
+-=      Tildeler subtraktionen af de to værdier til den venstre variable    var n = 3, var m = 2        n -= m      write(n) : 1
+*=      Tildeler multiplikationen af de to værdier til den venstra variable var n = 3, var m = 2        n *= m      write(n) : 6
+/=      Tildeler divisionen af de to værdier til den venstre variable       var n = 3, var m = 2        n /= m      write(n) : 1
+%=      Tildeler moodulus af de to værdier til den venstre variable         var n = 3, var m = 2        n %= m      write(n) : 1
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/*********************************************************************************************************/
+/                 HVAD SKAL JEG BRUGER DET TIL I DEN VIRKELIGE VERDEN???                                  /
+/*********************************************************************************************************/
+
+Disse assignments bruges når man vil forkorte / shorthand matematikken og bruges som når man vil bruge matematiske operator.
+

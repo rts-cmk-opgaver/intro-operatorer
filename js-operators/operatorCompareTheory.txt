@@ -1,0 +1,48 @@
+Operator - Comparison
+--------------------------
+
+Når vi vil sammenligne værdier der det de her operators vi skal have fat i. Her er output Boolean.
+Dvs enten true eller false. Her kan vi snakke om noget der er nyttigt. Især når det kommer til validering.
+... faktisk når det kommer til alt. 
+
+Alt programmering er essentielt bygget op over om betingelser er mødt eller ej. 
+
+Enhver beslutning vi tager som semi rationelle mennesker er bygget op over samme princip. 
+
+Er vores afsky for kaffe mindre end vores træthed efter at have lavet opgavesæt hele natten? 
+Hvis ja vil vi gerne tage 2 kopper, ellers tager vi en ekstra Booster energidrik.
+
+i programmering vil det se således ud: 
+
+if(detaste.coffee < tired.level){
+    Consume(2);
+}
+else{
+    booster++;
+}
+
+Ikke not med at vi kan sammenligne numeriske værdier. Det er muligt at sammenligne tekst om det er nogenlunde ens, præcis ens, osv.
+Det er muligt at sammenligne datatyper endda.
+
+Liste over samenligninger
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+==      Sammenligner om to værdier er ens uden at tage hensyn til datatype          'Boop' == 'Boop' : true
+===     Sammenligner om to værdier er ens samt datatype                             'Boop' === 3     : false
+!=      Sammenligner hvorvidt to værdier IKKE er ens                                'Boop' != 'Boop' : false
+>       Sammenligner om venstre værdi er større end højre værdi                      10 > 5          : true
+<       Sammenligner om venstre værdi er mindre end højre værdi                      10 < 5          : false
+>=      Sammenligner om venstre værdi er større end eller lig med højre værdi        10 >= 10        : true
+<=      Sammenligner om venstre værdi er mindre end eller lig med højre værdi        10 <= 11        : true
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Sammenligninger er basis for hvordan computeren tænker ned til det elektroniske kredsløb. Her fungere de elektroniske komponenter
+som operatorer. 
+
+/*********************************************************************************************************/
+/                 HVAD SKAL JEG BRUGER DET TIL I DEN VIRKELIGE VERDEN???                                  /
+/*********************************************************************************************************/
+
+Alle beslutninger du tager i livet (især omkring kaffe)
+
+Alle if/else statements er baseret som sammenligninger, det er hvad det stopper et loop, det er ALT validering.
